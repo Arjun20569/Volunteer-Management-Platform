@@ -33,6 +33,11 @@
 							<c:remove var="errorMsg" scope="session" />
 						</c:if>
 
+						<c:if test="${not empty error}">
+    						<div class="alert alert-danger">${error}</div>
+						</c:if>
+
+
 						<form action="user_register" method="post">
 							<div class="mb-3">
 								<label class="form-label">Full Name</label> <input required
