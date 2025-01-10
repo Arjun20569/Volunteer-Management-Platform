@@ -1,64 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <h1>🏥 Hospital Servlet Application</h1>
-  <p>
-    A web-based application for hospital management, utilizing Java Servlets, JSP, and a MySQL database. This project facilitates user registration, login, and management of hospital-related data.
-  </p>
 
-  <h2>📋 Features</h2>
-  <ul>
-    <li>User authentication (registration and login)</li>
-    <li>Dynamic user data handling using JSP and Servlets</li>
-    <li>Robust input validation on both client and server sides</li>
-    <li>Modular and clean code structure following best practices</li>
-  </ul>
+# Online Volunteer Management Platform
 
-  <h2>📂 Project Structure</h2>
-  <pre>
-<code>
-.
-├── src
-│   ├── com
-│   │   ├── hospital
-│   │   │   ├── controller
-│   │   │   ├── dao
-│   │   │   ├── model
-│   │   │   ├── util
-│   ├── resources
-│   ├── webapp
-│       ├── WEB-INF
-│       │   ├── jsp
-│       │   ├── web.xml
-├── pom.xml
-</code>
-  </pre>
 
-  <h2>🚀 Getting Started</h2>
-  <h3>Prerequisites</h3>
-  <ul>
-    <li>Java Development Kit (JDK) 8 or higher</li>
-    <li>Apache Tomcat server</li>
-    <li>MySQL database</li>
-    <li>Maven build tool</li>
-  </ul>
+## Project Summary
+The **Online Volunteer Management Platform** is designed to connect organizations with volunteers. It allows organizations to post volunteer opportunities, enables volunteers to sign up for them, and provides administrators with control over user and content management.
 
-  <h3>Setup Instructions</h3>
-  <ol>
-    <li>Clone the repository:</li>
-    <pre><code>git clone https://github.com/Candbury/Hospital_Servlet.git</code></pre>
-    <li>Navigate to the project directory:</li>
-    <pre><code>cd Hospital_Servlet</code></pre>
-    <li>Configure the database in the <code>db.properties</code> file.</li>
-    <li>Build the project using Maven:</li>
-    <pre><code>mvn clean install</code></pre>
-    <li>Deploy the <code>.war</code> file to your Tomcat server.</li>
-    <li>Access the application at <code>http://localhost:8080/Hospital_Servlet</code>.</li>
-  </ol>
+## Project Description
+The platform serves as a bridge between organizations and volunteers, where:
+- **Organizations** can post and manage volunteer opportunities.
+- **Volunteers** can sign up for events and track their participation and hours.
+- **Administrators** oversee users, manage volunteer listings, and handle system settings.
+
+
+## User Types and Functionalities
+
+### 1. Admin
+The Admin role is responsible for user and content management, with the following functionalities:
+- **User Management**
+  - **Input:** User details (name, email, role)
+  - **Output:** Confirmation of successful user creation, update, or deletion
+  - **Functionality:** Manage user accounts and roles.
+- **Volunteer Listings Management**
+  - **Input:** Listing details (opportunity, date, location)
+  - **Output:** Approval or rejection status
+  - **Functionality:** Approve or reject volunteer listings submitted by organizations.
+- **System Settings**
+  - **Input:** Configuration settings
+  - **Output:** Confirmation of successful settings update
+  - **Functionality:** Manage system-wide settings.
+
+### 2. Organization
+Organizations post and manage volunteer opportunities, with functionalities to interact with volunteers:
+- **Post Volunteer Opportunities**
+  - **Input:** Opportunity details (description, date, location)
+  - **Output:** Confirmation of successful posting
+  - **Functionality:** Post volunteer opportunities.
+- **Interact with Volunteers**
+  - **Input:** Interaction details (messages, feedback)
+  - **Output:** Confirmation of successful interaction
+  - **Functionality:** Communicate with volunteers.
+- **Track Volunteer Participation**
+  - **Input:** Participation details
+  - **Output:** Participation reports
+  - **Functionality:** Track and view volunteer participation.
+
+### 3. Volunteer
+Volunteers can explore and sign up for opportunities and interact with organizations:
+- **Sign Up for Opportunities**
+  - **Input:** Opportunity selection
+  - **Output:** Confirmation of successful sign-up
+  - **Functionality:** Sign up for volunteer opportunities.
+- **Track Volunteer Hours**
+  - **Input:** Volunteer hours details
+  - **Output:** Hours summary
+  - **Functionality:** Track and view volunteer hours.
+- **Interact with Organizations**
+  - **Input:** Interaction details (messages, feedback)
+  - **Output:** Confirmation of successful interaction
+  - **Functionality:** Communicate with organizations.
+
+## Dashboards
+
+### Admin Dashboard
+- **User Management:** View and manage user accounts with roles and statuses.
+- **Volunteer Listings Management:** See all volunteer listings and approval statuses.
+- **System Settings:** Configure and view system settings.
+- **Participation Overview:** View volunteer participation stats and pending approvals.
+
+### Organization Dashboard
+- **Post Opportunities:** Interface for posting and managing volunteer opportunities.
+- **Volunteer Interaction:** Manage communications with volunteers.
+- **Participation Tracking:** View signed-up volunteers and track participation.
+
+### Volunteer Dashboard
+- **Available Opportunities:** Browse and sign up for volunteer opportunities.
+- **My Sign-Ups:** Track the status of signed-up opportunities.
+- **Hours Tracking:** Log and view volunteer hours.
+
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Java (Spring Boot)
+- **Database**: MySQL
+- **Server**: Apache Tomcat
+
+## Installation
+1. Clone the repository:
+   git clone https://github.com/yourusername/online-volunteer-management-platform.git
 
   <h2>📸 Screenshots</h2>
   <h3>Home Page</h3>
@@ -72,37 +99,3 @@
   
   <h3>Register Page</h3>
   <img src="https://github.com/user-attachments/assets/3b4eac63-4831-4ba2-a53f-fe492ae87f23" alt="Register Page">
-
-
-  <h2>🛠️ Technologies Used</h2>
-  <ul>
-    <li><strong>Backend:</strong> Java Servlets, JSP</li>
-    <li><strong>Database:</strong> MySQL</li>
-    <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-    <li><strong>Build Tool:</strong> Maven</li>
-    <li><strong>Server:</strong> Apache Tomcat</li>
-  </ul>
-
-  <h2>🤝 Contributing</h2>
-  <p>
-    Contributions are welcome! To contribute:
-  </p>
-  <ol>
-    <li>Fork the repository.</li>
-    <li>Create a feature branch: <code>git checkout -b feature-name</code>.</li>
-    <li>Commit your changes: <code>git commit -m "Description"</code>.</li>
-    <li>Push to the branch: <code>git push origin feature-name</code>.</li>
-    <li>Open a pull request.</li>
-  </ol>
-
-  <h2>📜 License</h2>
-  <p>This project is licensed under the terms of Chaman and his team.</p>
-
-  <h2>📬 Contact</h2>
-  <p>
-    For inquiries or issues, please reach out via the <a href="https://github.com/Candbury">GitHub repository</a>.
-  </p>
-</body>
-</html>
-
-(
