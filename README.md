@@ -62,7 +62,7 @@
 
   <h2>📸 Screenshots</h2>
   <h3>Home Page</h3>
-  <img src="https://github.com/user-attachments/assets/0cb7ba1d-03d0-4927-b828-8571f715a169" alt="Home Page">
+  <img src="https://github.com/user-attachments/assets/ff0ab591-9add-49f6-96c5-521ce66d877b" alt="Home Page">
   
   <h3>Search Page</h3>
   <img src="https://github.com/user-attachments/assets/e37c28c8-6806-471f-a211-79af539e60fd" alt="Search Page">
@@ -105,4 +105,4 @@
 </body>
 </html>
 
-(https://github.com/user-attachments/assets/ff0ab591-9add-49f6-96c5-521ce66d877b
+(
