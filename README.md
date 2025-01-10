@@ -91,11 +91,10 @@ Volunteers can explore and sign up for opportunities and interact with organizat
   <h3>Home Page</h3>
   <img src="https://github.com/user-attachments/assets/ff0ab591-9add-49f6-96c5-521ce66d877b" alt="Home Page">
   
-  <h3>Search Page</h3>
-  <img src="https://github.com/user-attachments/assets/e37c28c8-6806-471f-a211-79af539e60fd" alt="Search Page">
-  
   <h3>Login Page</h3>
-  <img src="https://github.com/user-attachments/assets/8dfbf30c-14d9-433c-a730-3c247c6b4f4e" alt="Login Page">
+  <img src="https://github.com/user-attachments/assets/d7831583-f93f-4caf-bc20-14ab4c646adf">
   
   <h3>Register Page</h3>
-  <img src="https://github.com/user-attachments/assets/3b4eac63-4831-4ba2-a53f-fe492ae87f23" alt="Register Page">
+  <img src="https://github.com/user-attachments/assets/facf5dcb-6dc2-4fcb-9fa3-8ad3a1897726">
+
+
